@@ -23,8 +23,8 @@
                 <td>{{ articulo.descripcion }}</td>
                 <td>{{ articulo.cuerpo }}</td>
                 <td>
-                    <a href="{{ path('articulo_show', {'id': articulo.id}) }}">show</a>
-                    <a href="{{ path('articulo_edit', {'id': articulo.id}) }}">edit</a>
+                    <a href="{{ path('articulo_show', {'id': articulo.id}) }}" class="btn btn-primary">Mostrar</a>
+                    <a href="{{ path('articulo_edit', {'id': articulo.id}) }}" class="btn btn-primary">Editar</a>
                 </td>
             </tr>
         {% else %}
@@ -35,5 +35,5 @@
         </tbody>
     </table>
 
-    <a href="{{ path('articulo_new') }}">Create new</a>
+    <a href="{{ path('articulo_new') }}" class="btn btn-primary">Crear uno nuevo</a>
 {% endblock %}
